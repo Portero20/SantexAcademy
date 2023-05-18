@@ -897,9 +897,9 @@ footer {
 
     }
 
-    .contenidoImpacto > .contentImpacto > .parrafoImpacto {
+    .contenidoImpacto .contentImpacto .parrafoImpacto {
 
-        width: 100%;
+        width: 18rem;
 
     }
 
