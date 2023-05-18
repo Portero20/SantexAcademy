@@ -1,0 +1,1104 @@
+/* Estilos generales */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+}
+
+/* Estilos para la navbar */
+
+.header {
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+    border-bottom: 1px solid black;
+    background-color: #fff;
+
+}
+
+.contenedorLogo {
+
+    padding-left: 3rem;
+
+}
+
+.navbar .contenedorItems{
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.navbar .contenedorItems .enlacesNavbar {
+
+    list-style-type: none;
+    font-size: .8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s color;
+
+}
+
+.navbar .contenedorItems :is(.enlacesNavbar:hover) {
+
+    color: rgb(107, 83, 240); 
+
+}
+
+.navbar .contenedorItems .botonSumate__nav {
+
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #1E272C;
+    color: black;
+    border-radius: 1rem;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: .2s background-color;
+
+}
+
+.navbar .contenedorItems .botonSumate__nav:is(:hover) {
+
+    background-color: black;
+    color: white;
+
+}
+
+.contenedorItems .contenedorRedes {
+
+    display: flex;
+    gap: 1rem;
+    margin-right: 4rem;
+
+}
+
+.iconoIg,
+.iconoLinkedin {
+
+    color: black;
+    transition: color .2s;
+    cursor: pointer;
+
+}
+
+.iconoIg:is(:hover),
+.iconoLinkedin:is(:hover) {
+
+    color: rgb(158, 35, 255); 
+
+}
+
+
+
+/* Estilos sección principal */
+
+.seccionPrincipal {
+
+    padding: 3rem;
+    padding: 4.37rem;
+
+}
+
+.flexPrincipal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.contenedorTitulo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexPrincipal .contenedorTitulo h1 {
+
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 2.1rem;
+    width: 37rem;
+}
+
+.flexPrincipal .contenedorBotones {
+
+    display: flex;
+    gap: 2rem;
+
+}
+
+.flexPrincipal .contenedorBotones .botonContactanos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid #1E272C;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: background-color .2s;
+    color: black;
+    height: 2.4rem;
+
+}
+
+.flexPrincipal .contenedorBotones .botonContactanos:is(:hover) {
+
+    background-color: black;
+    color: white;
+
+}
+
+.flexPrincipal .contenedorBotones .botonContactanos .fa-long-arrow-alt-right  {
+
+   margin-left: .6rem;
+
+}
+
+.flexPrincipal .contenedorBotones .botonSumate__principal {
+
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    border: 2px solid rgb(107, 83, 240);
+    padding: 0.6em 1.25rem 0.6rem 1.25rem;
+    text-decoration: none;
+    border-radius: 1.25rem;
+    color: rgb(107, 83, 240);
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: .2s background-color;
+    height: 2.4rem;
+
+}
+
+.flexPrincipal .contenedorBotones .botonSumate__principal:is(:hover) {
+
+    background-color: rgb(107 ,83 ,240);
+    color: white;
+
+}
+
+.flexPrincipal .contenedorBotones .botonSumate__principal .fa-plus  {
+
+
+    font-weight: 900;
+ 
+ }
+
+.flexPrincipal .contenedorBotones .fa-plus {
+
+
+    font-weight: 900;
+
+}
+
+/* Estilos sección secundaria */
+
+
+.seccionSecundaria {
+
+    background: #201b24 center center no-repeat;
+    padding: 120px 30px 100px 30px;
+
+}
+
+.contenidoImpacto {
+
+    padding-right: 1.87rem;
+    padding-left: 1.87rem;
+
+}
+
+
+.contentImpacto {
+
+    width: 100%;
+
+}
+
+
+.contentImpacto > .textoImpacto {
+
+    color: white;
+    font-size: 2rem;
+
+}
+
+.contenidoNumeros {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+
+}
+
+.contenidoParrafo {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    place-content: center;
+
+}
+
+
+.contenidoImpacto .contentImpacto .parrafoImpacto {
+
+    font-size: .9rem;
+    color: white;
+    margin-top: 1rem;
+    line-height: 1.3rem;
+    width: 25rem;
+}
+
+
+.contenidoNumeros .contenido__numero h2{
+
+    color: white;
+    font-size: 3.1rem;
+
+}
+
+.contenidoNumeros > .contenido__numero h2 ~ p {
+
+    color: rgb(140, 147, 156);
+    font-size: .8rem;
+
+}
+
+.contenidoNumeros .contenido__numero > p {
+
+    color: rgb(140, 147, 156);
+    text-align: center;
+    font-size: .8rem;
+
+}
+
+.contenido__numero .iconoMas{
+
+    font-size: .9rem;
+
+}
+
+.contenido__numero .fa-plus {
+
+    font-size: 2rem;
+    color: rgb(107, 83, 240);
+
+}
+
+.contenido__numero .hijo__numero2 {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+/* Seccion Imagen de fondo */
+
+
+.seccionCuaternaria > .imagen__technology {
+
+    background: url(./img/technology/twp-home.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55rem;
+
+}
+
+/* Seccion Quinaria */
+
+
+.seccionQuinaria {
+
+    padding: 4rem;
+
+}
+
+.contenedorPrincipal {
+
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    place-items: center;
+    gap: 5rem;
+
+}
+
+.programasContenido > .textoProgramas {
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+}
+
+.capacitacionesTexto {
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+}
+
+.programasImagen .imagenTech {
+
+    border-radius: 0 2rem 2rem 2rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+.descXacademy__contenedor {
+
+    margin-bottom: 1rem;
+
+}
+
+.imagenXacademy__contenedor .logoXacademy {
+
+    max-width: 100%;
+    height: 2.6rem;
+
+}
+
+
+.parrafoDesc {
+
+    padding: .6rem 0;
+    font-weight: 300;
+    font-size: .8rem;
+    text-align: left;
+    width: 80%;
+
+}
+
+
+.imagenRobotica {
+
+    max-width: 100%;
+    border-radius: 0 2rem 0 2rem;
+
+}
+
+.parrafoDesc2 {
+
+    padding: 1rem 0;
+    font-size: .8rem;
+    width: 80%;
+
+}
+
+.infoHover:hover {
+
+    background-color: black;
+    color: white;
+
+}
+
+.botonInfo,
+.botonInfo2,
+.botonInfo3,
+.botonInfo4 {
+
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #1E272C;
+    color: black;
+    background-color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: background-color .2s;
+
+}
+
+
+.imagenCapa {
+
+    max-width: 100%;
+    border-radius: 0 2rem 2rem 2rem;
+
+}
+
+.parrafoDesc3 {
+
+    padding: 1rem 0;
+    font-size: .8rem;
+    width: 80%;
+
+}
+
+.imagenSeguridad {
+
+    max-width: 100%;
+    border-radius: 0 2rem 2rem 2rem;
+
+}
+
+.parrafoDesc4 {
+
+    padding: 1rem 0;
+    font-size: .8rem;
+    width: 80%;
+
+}
+
+
+/* Seccion Team */
+
+.texto__equipo {
+
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5rem 0 0 3rem;
+
+}
+
+.contenedorCards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    padding-top: 2rem;
+
+}
+
+.seccionTeam {
+
+    background-color: rgb(244, 244, 245);
+
+}
+
+.contenedorCards :is(.cards) {
+
+    background-color: white;
+    border-radius: .8rem .8rem .8rem 0;
+    width: 13.7rem;
+    height: 80%;
+}
+
+.hijoCards {
+
+    margin-top: 2rem;
+    padding: 0 1rem;
+
+}
+
+.cardImage > :where(.imageTeam) {
+
+    border-radius: .8rem .8rem 0 0;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.cardDescripcion {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cardDescripcion > .linkedinTeam__container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 12.32px;
+    line-height: 20.64px;
+    height: 24.64px;
+    width: 24.64px;
+    border-radius: 50% 50% 50% 50%;
+    margin: 0;
+    border: 1px solid black;
+    color: black;
+    margin: 0;
+
+
+}
+
+.cardDescripcion > .linkedinTeam__container{
+
+    color: black;
+    cursor: pointer;
+    transition: .3s background-color;
+
+}
+
+.iconoLinkedin2 {
+
+    color: black;
+
+}
+
+.cardDescripcion :where(.cardNombre) {
+
+    font-size: 1.1rem;
+    margin-bottom: .6rem;
+    white-space: nowrap;
+
+}
+
+.cardDescripcion :is(.cardRol) {
+
+    color: rgb(140, 147, 156);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+
+}
+
+/* Seccion Alianzas */
+
+.seccionAlianzas {
+
+    margin-top: 3.75rem;
+    padding: 0 5rem 5rem;
+    
+
+}
+
+
+.seccionAlianzas > .textoAlianzas {
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.slider {
+
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.slider::before {
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 23.958%;
+    height: 110px;
+
+}
+
+.slider::after {
+
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 23.958%;
+    height: 110px;
+    background: linear-gradient(90deg, hsla(0, 0%, 96.9%, 0), hsla(0, 0%, 96.9%, 0.99)) 99%;
+
+}
+
+.slider .slide-track {
+
+    display: flex;
+    animation: scroll 35s alternate infinite;
+    -webkit-animation: scroll 35s alternate infinite;
+    width: calc(240px * 10);
+
+}
+
+.slider .slide {
+
+    display: flex;
+
+}
+
+.slider .slide .grayscale {
+
+    width: 11.25rem;
+    height: 5rem;
+    padding: 0.6rem;
+    background-color: white;
+    cursor: pointer;
+    margin: 1.25rem;
+    border-radius: 8px;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 25px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+    filter: grayscale(100%);
+    transition: filter .4s;
+
+}
+
+.slide:is(:hover) .grayscale {
+
+    filter: grayscale(0%);
+
+}
+
+@keyframes scroll{
+
+    0% {
+
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+
+    }
+
+    100% {
+
+        -webkit-transform: translateX(calc(-240px * 5));
+        transform: translateX(calc(-240px * 5));
+
+    }
+
+}
+  
+/* Footer */
+
+footer {
+
+    background-color: #201B24;
+    padding: 3.75rem 1.8rem 2.5rem 1.8rem;
+    width: 100%;
+}
+
+.hijoFooter {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.contenedorTexto__footer {
+
+    width: 20%;
+
+}
+
+.contenedorTexto__footer .textoFooter {
+
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    color: rgb(217, 217, 217);
+
+}
+
+.contenedorEnlaces__footer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedorEnlaces__footer a:nth-child(1n + 1) {
+
+    display: flex;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: .9rem;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 0 .5rem;
+    transition: color .2s ,font-weight .2s;
+
+}
+
+.contenedorEnlaces__footer a:hover {
+
+    color: white;
+    font-weight: 700;
+
+}
+
+.enlacesRedes {
+
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+
+}
+
+.enlacesFooter {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedorEnlaces__footer > a > i {
+
+    padding-right: .8rem;
+
+}
+
+.instagramFooter,
+.linkedinFooter {
+
+    color: white;
+    font-size: 0.8rem;
+
+}
+
+/* Burger Menu */
+
+.contenedorBurger {
+
+    display: none;
+
+}
+
+.contenedorItems > .cerrar-menu .menuX {
+
+    display: none;
+
+}
+
+.menu-toggle {
+
+    display: none;
+
+}
+
+.contenedorLupa  {
+
+    display: none;
+
+}
+
+.menuDespegable {
+
+    display: none;
+
+}
+
+.lupa-toggle {
+
+    display: none;
+
+}
+
+.lupaContenido {
+
+    display: none;
+    padding: 2rem;
+
+}
+
+.contenidoIconos {
+
+    display: flex;
+    gap: 1rem;
+
+}
+
+.inputFlex {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cerrar-menu2 {
+
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+}
+
+.lupaSearch {
+
+   outline: none;
+   border: none;
+   border-bottom: 1px solid black;
+   width: 100%;
+   font-size: 3.5rem;
+
+}
+
+.lupaSearch::placeholder {
+
+    color: black;
+
+}
+
+
+
+/* Medias queries para celulares*/
+
+@media screen and (min-width: 20em) and (max-width:26em){
+
+    .contenidoImpacto {
+
+        flex-direction: column;
+
+    }
+
+    .contenidoNumeros {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contenedorCards :is(.cards) {
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .contenidoImpacto > .contentImpacto > .parrafoImpacto {
+
+        width: 100%;
+
+    }
+
+    .navbar > .contenedorItems {
+
+        display: none;
+
+    }
+
+    .contenedorPrincipal {
+
+        grid-template-columns: auto;
+
+    }
+
+    .flexPrincipal .contenedorTitulo h1 {
+
+        font-size: 1.75rem;
+        width: 20rem;
+
+    }
+
+    .seccionCuaternaria > .imagen__technology {
+
+        display: none;
+
+    }
+
+    .contenedorCards {
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hijoFooter {
+
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .contenedorLogo {
+
+        padding: 0;
+    }
+
+}
+
+/* Medias queries para Tablet */
+
+@media screen and (max-width: 48em) {
+
+    .flexPrincipal .contenedorTitulo h1 {
+
+        font-size: 1.75rem;
+        width: 20rem;
+
+    }
+
+    .contenidoNumeros {
+
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .navbar>.contenedorItems {
+
+        display: none;
+
+    }
+
+    .contenedorPrincipal {
+
+        grid-template-columns: auto;
+
+    }
+
+    .contenedorCards :is(.cards) {
+
+        width: 100%;
+
+    }
+
+    .contenidoNumeros {
+
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .hijoFooter {
+
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .contenedorLogo {
+
+        padding: 0;
+    }
+
+
+}
+
+/* Medias para tablet */
+
+@media screen and (max-width: 64em) {
+
+
+    .contenedorBurger {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .menuDespegable > .cerrar-menu {
+
+        position: absolute;
+        top: 30px;
+        right: 20px;
+
+    }
+
+    .menu-toggle:checked ~ .menuDespegable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lupa-toggle:checked ~ .lupaContenido {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .lupaContenido {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255);
+
+    }
+
+    .menuDespegable {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: rgba(255, 255, 255);
+        padding: 2rem;
+        list-style: none;
+        text-align: center;
+        color: black;
+        flex-direction: column;
+        font-weight: 600;
+    }
+
+    .menuDespegable a {
+
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .menu-desplegable li {
+        margin-bottom: 1rem;
+    }
+
+    .menu-desplegable a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contenedorLupa {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .navbar .contenedorItems {
+
+        display: none;
+
+    }
+
+    .contenedorLogo {
+
+        padding: 0;
+    }
+
+}
